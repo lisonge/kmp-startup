@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v6
 
@@ -14,7 +14,6 @@ jobs:
           distribution: 'zulu'
           java-version: '21'
 
-      - run: chmod 777 ./gradlew
       - run: ./gradlew createReleaseDistributable
 
       - uses: actions/upload-artifact@v6
