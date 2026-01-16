@@ -1,0 +1,14 @@
+*.iml
+.kotlin
+.gradle
+.idea
+**/build/
+!src/**/build/
+local.properties
+.DS_Store
+captures
+.externalNativeBuild
+.cxx
+*.xcodeproj/*
+**/xcshareddata/WorkspaceSettings.xcsettings
+node_modules/
